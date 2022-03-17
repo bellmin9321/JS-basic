@@ -2,15 +2,15 @@ function foo () {
   const stock1 = "apple";
   const stock2 = "tesla";
 
-  function closure () {
+  function makeClosure () {
     console.log(stock1, stock2);
   }
 
-  return closure;
+  return makeClosure;
 }
 
-const action = foo();
+const func = foo();
 
-action();
+func();
 
 
